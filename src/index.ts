@@ -4,7 +4,13 @@ const user = new User({ name: "brand new name rew", age: 493 });
 // user.fetch();
 
 // user.set({ name: "brand new name", age: 493 });
-user.save();
+// user.save();
+
+user.events.on("change", () => {
+  console.log("change 111");
+});
+
+user.events.trigger("change");
 
 // import axios from "axios";
 
