@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "age": 0
+      "age": 10
     },
     {
       "name": "myname",
